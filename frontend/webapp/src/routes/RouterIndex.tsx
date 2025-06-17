@@ -1,12 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
-import Login from '../pages/LoginPage';      
-import RegisterComp from '../components/Registration/RegisterComp';    
+import LoginPage from '../pages/LoginPage';      
+import HomeComp from '../components/Home/HomeComp';
+// import RegisterComp from '../pages/RegisterPage';    
+import HomePage from '../pages/HomePage';
 
 export function RouterIndex() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />             {/* Default route */}
-      <Route path="/register" element={<RegisterComp />} />             
+      <Route path="/login" element={<LoginPage />} />             {/* Default route */}
+      {/* <Route path="/register" element={<RegisterPage />} /> */}
+      <Route path="/home" element={<HomePage />} />                 {/* Fallback route */}             
     </Routes>
   );
 }
