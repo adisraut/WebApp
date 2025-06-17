@@ -1,12 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Login from '../pages/LoginPage';      
-import RegisterComp from '../components/Registration/RegisterComp';    
+import Login from '../pages/LoginPage';        
 
 export function RouterIndex() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />             {/* Default route */}
-      <Route path="/register" element={<RegisterComp />} />             
+      <Route path="/login" element={<Login />} />             {/* Default route */}            
     </Routes>
   );
 }
