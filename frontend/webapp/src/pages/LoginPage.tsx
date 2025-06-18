@@ -1,6 +1,6 @@
 import {LoginForm} from "../components/login-form";
 
-export function LoginPage() {
+export default function LoginPage() {
   return (
     <div style={{ padding: '20px' }}>
       <h2>Login</h2>
@@ -9,4 +9,3 @@ export function LoginPage() {
   );
 }
 
-export default LoginPage;
