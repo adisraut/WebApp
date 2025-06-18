@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from '../ui/button';
-import {LoginPage} from '@/pages/LoginPage';
+import {SignUpPage} from '@/pages/SignUpPage';
 import {useNavigate} from 'react-router-dom';
 const HomeComp: React.FC = () => {
   const navigate = useNavigate();

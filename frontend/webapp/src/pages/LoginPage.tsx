@@ -1,12 +1,13 @@
-import {LoginForm} from "../components/login-form";
+import LoginForm from "../components/Login/LoginComp";
 
-export function LoginPage() {
+const LoginPage = () => {
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Login</h2>
-      <LoginForm />
+    <div className="min-h-screen flex items-center justify-center bg-zinc-900">
+      <div className="bg-black p-8 rounded-xl shadow-md w-full max-w-md">
+        <LoginForm />
+      </div>
     </div>
   );
-}
+};
 
 export default LoginPage;
